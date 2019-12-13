@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.registrarAdministrador.html',
+  //templateUrl: './app.registrarAdministrador.html',
+  templateUrl: './app.registrarLugar_evento.html',
+  //templateUrl: './app.eliminarAdministrador.html',
   styleUrls: ['./app.component.scss']
   
 })
