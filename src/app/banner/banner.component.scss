@@ -1,0 +1,98 @@
+.vertical-menu {
+    background-color: #eee;
+  }  
+  .vertical-menu a {
+    
+    color: black;
+    display: inline-block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  .vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+.button-Registar{ 
+    background-color: #4CAF50;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+  }
+.topnav {
+    overflow: hidden;
+  }
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+.Rinput[type="number"] {
+    width:500px;
+ }
+.otherinput{
+  width:500px;
+}
+ 
+.sel{    
+    overflow: hidden;  
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  .icon-bar {
+    margin-top: 8px;
+    width: 100px;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  .icon-bar a {
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 4px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  .youtube{
+      background-color: red;
+  }
+  .instagram{
+    background-color: purple;
+  }
+  .twitter{
+    background-color: darkturquoise;
+  }
+  .facebook{
+      background-color:blue;
+  }
+.categoriasel{    
+    overflow: hidden;  
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 15px;
+  }
+
+
+
+
+  
+  
