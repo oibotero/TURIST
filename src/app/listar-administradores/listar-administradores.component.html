@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="container, container-sm, container-md, container-lg, container-xl">
+    <div class="row">
+        <div class="col-1, col-sm-1, col-md-1, col-lg-1, col-xl-1"></div>
+        <div class="col-10, col-sm-10, col-md-10, col-lg-10, col-xl-10">
+            <table class="table table-striped">
+                <thead>
+                    <th>Rol</th>
+                    <th>Nombre Completo</th>
+                    <th>Nombre de Usuario</th>
+                    <th>Tipo de Documento</th>
+                    <th>Numero de Documento</th>
+                    <th>Correo Electronico</th>
+                    <th>Codigo de Aceptacion</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of usuariosL">
+                        <td> {{item.rol}}</td>
+                        <td> {{item.nombreCompleto}}</td>
+                        <td> {{item.nombreUsuario}}</td>
+                        <td> {{item.tipoDocumento}}</td>
+                        <td> {{item.numeroDocumento}}</td>
+                        <td> {{item.correoElectronico}}</td>
+                        <td> {{item.codigoAceptacion}}</td>
+                        <td>
+                          <button (click)="eliminarPersona(item.nombreUsuario)" class="btn btn-primary"> Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+    </div>
+</div>
