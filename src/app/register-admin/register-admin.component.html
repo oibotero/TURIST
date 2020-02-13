@@ -4,26 +4,46 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<div class="col-xs-12">
+<div class="col-10, col-sm-10, col-md-10, col-lg-10, col-xl-10">
     <div class="text-center">
         <div class="topnav">
             <img width="150" height="150" src="assets/img/log.jpg">
         </div>
-        <br>
-        <input class="otherinput" placeholder="Nombre Completo" type="text" id="input_nombreAdministrador" />
-        <br><br />
-        <input class="otherinput" placeholder="Nombre Usuario" type="text" id="input_nombreUsuarioAdministrador" />
-        <br><br />
-        <input class="otherinput" placeholder="Tipo documento" type="text" id="input_tipoDocumentoAdministrador" />
-        <br><br />
-        <input class="Rinput" placeholder="Numero de Documento" type="number" id="input_documentoAdministrador" />
-        <br><br />
-        <input class="otherinput" placeholder="Correo Electronico" type="email" id="input_correoAdministrador" />
-        <br><br />
-        <input class="otherinput" placeholder="Codigo de Aceptación" type="text" id="input_codigoAdministrador" />
-        <br><br />
-        <input class="otherinput" placeholder="Contraseña" type="password" id="input_contraseñaAdministrador" />
-        <br><br />
-        <button class="button-Registar" id="btn_registarAdministrador">Registrar</button>
+        <form (ngSubmit)="form-group">
+            <div class="form-group">
+                <input placeholder="Nombre Completo" type="text"
+                    [(ngModel)]="agregarUsuarioRegistro.nombreCompleto" name="nombreCompleto" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <input placeholder="Nombre Usuario" type="text"
+                    [(ngModel)]="agregarUsuarioRegistro.nombreUsuario" name="nombreUsuario" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input placeholder="Tipo documento" type="text"
+                    [(ngModel)]="agregarUsuarioRegistro.tipoDocumento" name="tipoDocumento" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input placeholder="Numero de Documento" type="number"
+                    [(ngModel)]="agregarUsuarioRegistro.numeroDocumento" name="numeroDocumento" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input placeholder="Correo Electronico" type="email"
+                    [(ngModel)]="agregarUsuarioRegistro.correoElectronico" name="correoElectronico" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input placeholder="Codigo de Aceptación" type="text"
+                    [(ngModel)]="agregarUsuarioRegistro.codigoAceptacion" name="codigoAceptacion" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input placeholder="Contraseña" type="password"
+                    [(ngModel)]="agregarUsuarioRegistro.contrasena" name="contrasena" class="form-control" />
+            </div>
+            <div>
+
+                <button (click)="agregarPersona()" type="submit" class="btn btn-primary"> agregar administrador</button>
+
+            </div>
+        </form>
     </div>
 </div>
