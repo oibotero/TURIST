@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 //})
 )
 export class UsuariosService {
-  private usuariosURL = 'http://localhost:50929/api/usuarios';
+  private usuariosURL = 'https://localhost:44352/api/usuarios';
 
   constructor(private HttpClient: HttpClient) { }
 
@@ -22,7 +22,7 @@ GetAll(){
   agregarUsuario(usuario: any) {
     let json = JSON.stringify(usuario);
     let headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return this.HttpClient.post("https://localhost:44347/api/USUARIOs", json, { headers: headers })
+    return this.HttpClient.post(this.usuariosURL, json, { headers: headers })
   }
   eliminarUsuario(identificador): Observable<any> {
     return this.HttpClient.delete(this.usuariosURL+"/" + identificador);

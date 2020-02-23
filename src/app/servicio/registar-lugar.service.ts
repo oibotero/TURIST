@@ -5,18 +5,19 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class RegistrarUsuariosService {
-  private usuariosURL = 'https://localhost:44352/api/usuarios';
+export class RegistarLugarService {
+  private lugaresURL = 'https://localhost:44352/api/lugares';
 
   constructor(private HttpClient: HttpClient) { }
-  
-  agregarUsuario(usuario: any): Observable<any> {
-    let json = JSON.stringify(usuario);
+
+
+  agregarLugar(lugar: any): Observable<any> {
+    let json = JSON.stringify(lugar);
     let headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return this.HttpClient.post(this.usuariosURL, json, { headers: headers })
+    return this.HttpClient.post(this.lugaresURL, json, { headers: headers })
   };
   GetAll(){
-
-    return this.HttpClient.get(this.usuariosURL);
+    return this.HttpClient.get(this.lugaresURL);
   }
+
 }

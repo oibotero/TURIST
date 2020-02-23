@@ -1,3 +1,5 @@
+<script src="/src/JS/scripts.js"></script>
+
 <div class="col-md-12">
     <div class="text-center">
         <h1>Registrar Lugar</h1>
@@ -8,114 +10,67 @@
 <br />
 <br />
 
-<div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-6">
-        <label for="">¿Cuál es el nombre del lugar que quieres registrar? *</label>
-    </div>
-    <div class="col-md-4"></div>
-    <div class="col-md-2"></div>
-    <br>
-    <div class="col-md-6">
-        <input type="text" id="lugarRegistrar" size="60">
-    </div>
-    <div class="col-md-4"></div>
 
-    <div class="col-md-2"></div>
-    <div class="col-md-6">
-        <label for="">Danos una descripcion del lugar ( Hasta 1090 caracteres) *</label>
-    </div>
-    <div class="col-md-4"></div>
-    <div class="col-md-2"></div>
-    <br>
-    <div class="col-md-6">
-        <textarea name="" id="descripcionlugarRegistrar" cols="60" rows="7"></textarea>
-
-    </div>
-    <div class="col-md-4"></div>
-
-    <div class="col-md-2"></div>
-    <div class="col-md-6">
-        <label for="">Breve descripcion de ¿que hacer? (Hasta 580 caracteres)</label>
-    </div>
-    <div class="col-md-4"></div>
-    <div class="col-md-2"></div>
-    <br>
-    <div class="col-md-6">
-        <textarea name="" id="lugarRegistrar" cols="60" rows="7"></textarea>
-
-    </div>
-    <div class="col-md-4"></div>
-</div>
+<div class="col-10, col-sm-10, col-md-10, col-lg-10, col-xl-10">
+    <div class="text-center">
+        <form novalidate #f="ngForm" (ngSubmit)="form-group">
+            <div class="form-group">
+                <label for="">¿Cuál es el nombre del lugar que quieres registrar? *</label>
+                <input ngModel required placeholder="Ingresar nombre del lugar" type="text"
+                    [(ngModel)]=AgregarLugarRegistro.nombreLugar name="nombreLugar" class="form-control">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="">Danos una descripcion del lugar ( Hasta 1090 caracteres) *</label>
+                <textarea ngModel required maxlength="1090"
+                    placeholder="Ingrese una descripcion del lugar Hasta 1090 caracteres"
+                    [(ngModel)]=AgregarLugarRegistro.descripcionLugar name="descripcionLugar" class="form-control"
+                    cols="60" rows="7"></textarea>
+            </div>
+            <label for="">Breve descripcion de ¿que hacer? (Hasta 580 caracteres)</label>
+            <br>
+            <div class="form-group">
+                <textarea ngModel required maxlength="580" placeholder="Ingrese una breve descripcion de que hacer"
+                    [(ngModel)]=AgregarLugarRegistro.descripcionQueHacer name="descripcionQueHacer" class="form-control"
+                    cols="60" rows="7"></textarea>
+            </div>
+            <br>
+            <label for="">Subir fotografias del lugar</label>
+            <br>
+            <br>
+            <div class="form-group">
+                <input ngModel required type="url" name="imagenes" class="form-control"
+                    [(ngModel)]=AgregarLugarRegistro.imagenes>
+                <label for=""> Los Archivos deben ser menores a 2MB y deben estar en .png o .jpg</label>
 
 
+             
+                
+                <tr *ngFor="let item of data; let i = index">
+                    <td type="text" [(ngModel)]="AgregarLugarRegistro.id" name="id" class="form-control">{{i+1}} </td>
+                    <a [(ngModel)]=dato name="dato" class="form-control"> {{i+1}}</a>
+                    
+                </tr>
+            </div>
+            <br>
+            <br>
+            
+            <div class="text-center">
+                <button (click)="agregarLugar()" type="submit" class="btn btn-primary" [disabled]="f.invalid">Registrar
+                    Lugar</button>
+            </div>
+            <br>
+            <br>
 
-<div class="row">
+        </form>
+        <div class="float-right">
 
-    <div class="col-md-2"></div>
-    <div class="col-md-6">
-        <label for="">Breve descripcion del Evento (Hasta 580 caracteres)</label>
-    </div>
-    <div class="col-md-4"></div>
-    <!-- inicio nueva fila-->
-    <div class="col-md-2"></div>
-    <br>
-    <div class="col-md-6">
-        <textarea name="" id="lugarRegistrar" cols="60" rows="7"></textarea>
-    </div>
-    <div class="col-md-2"></div>
-</div>
+            <a href="#">Terminos y Condicione</a>
+            |
+            <a href="#">Mapa del sito</a>
 
-
-<br>
-
-<div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-6">
-        <label for="">Subir fotografias del lugar</label>
-    </div>
-    
-    
-</div>
-
-<br>
-<br>
-<div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-2">
-        <input type="image" id="subirArchivos">
-    </div>
-    <div class="col-md-8">
-        <label for=""> Los Archivos deben ser menores a 2MB y deben estar en .png o .jpg</label>
-    </div>
-</div>
-<br>
-
-
-<br>
-<div class="row">
-    <div class="col-md-6">
-        <div class="text-center">
-            <button class="button-Registar" id="btn_registrarLugar">Registrar Lugar</button>
         </div>
     </div>
-    <div class="col-md-6">
-        <div class="text-center">
-            <button class="button-Registar" id="btn_cancelar">Cancelar</button>
-        </div>
-
-    </div>
 </div>
 <br>
 <br>
-
-<div class="float-right">s
-
-    <a href="#">Terminos y Condicione</a>
-    |
-    <a href="#">Mapa del sito</a>
-
-</div>
-
-<br>
-<br>    

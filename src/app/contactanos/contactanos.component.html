@@ -1,0 +1,66 @@
+<div class="col-md-12">
+    <div class="text-center">
+        <h1>Contactanos</h1>
+    </div>
+
+</div>
+<br />
+<br />
+<br />
+
+
+<div class="col-10, col-sm-10, col-md-10, col-lg-10, col-xl-10">
+    <div class="text-center">
+        <form (ngSubmit)="form-group">
+            <div class="form-group">
+                <label for="">¿Cuál es tu nombre? *</label>
+                <input required placeholder="Ingresa tu nombre" type="text" [(ngModel)]=AgregarContacto.nombreUsuario
+                    name="nombreUsuario" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label for="">Cual es tu correo electronico *</label>
+                <input placeholder="Correo Electronico" type="email" [(ngModel)]="AgregarContacto.correoElectronico"
+                    name="correoElectronico" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="">¿porque nos escribes? *</label>
+                <select name="pais" class="form-control" [(ngModel)]=AgregarContacto.asunto name="asunto">
+                    <option value="opcion1">opcion1</option>
+                    <option value="opcion2">opcion2</option>
+                    <option value="opcion3">opcion3</option>
+                    <option value="opcion4">opcion4</option>
+                </select>
+            </div>
+            <label for="">¿Que quieres decirnos? </label>
+            <br>
+            <div class="form-group">
+                <textarea required maxlength="2000" placeholder="Ingresa tu experiencia"
+                    [(ngModel)]=AgregarContacto.descripcionAsunto name="descripcionAsunto" class="form-control"
+                    cols="60" rows="7"></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="">fecha del viaje </label>
+                <input type="date"
+                    [(ngModel)]=AgregarContacto.fecha name="fecha" class="form-control">
+            </div>
+             
+             
+
+            <div class="text-center">
+                <button (click)="agregarContactoComponent()" type="submit" class="btn btn-primary">Registrar Lugar</button>
+            </div>
+            <br>
+            <br>
+        </form>
+        <div class="float-right">
+
+            <a href="#">Terminos y Condicione</a>
+            |
+            <a href="#">Mapa del sito</a>
+
+        </div>
+    </div>
+</div>
+<br>
+<br>

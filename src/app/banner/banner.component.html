@@ -5,16 +5,17 @@
 
 
 
-<div class="col-md-12">
+<div class="col-12, col-sm-12, col-md-12, col-lg-12, col-xl-12">
+    
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-2, col-sm-2, col-md-2, col-lg-2, col-xl-2">
             <div class="topnav">
                 <img width="150" height="200" src="assets/img/pc.png">
             </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-10, col-sm-10, col-md-10, col-lg-10, col-xl-10">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-12, col-sm-12, col-md-12, col-lg-12, col-xl-12">
                     <div class="float-right">
                         <select class="sel">
                             <option value="ayuda0">¿Podemos Ayudarte?</option>
@@ -23,37 +24,48 @@
                         </select>
                     </div>
                     <div class="float-right">
+                        <select class="sel">
+                            <option value="ayuda0">English</option>
+                            <option value="ayuda1">Spanish</option>
+                            <option value="ayuda2">Japanese</option>
+                        </select>
+                    </div>
+                    <div class="float-left">
                         <div class="icon-bar">
-                            <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
-                            <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
-                            <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                            <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                            <a class="instagram" href="#"><i class="fa fa-instagram"  style="font-size:24px;color:purple" ></i></a>
+                            <a class="youtube" href="#"><i class="fa fa-youtube" style="font-size:24px;color:RED"></i></a>
+                            <a class="facebook" href="#"><i class="fa fa-facebook" style="font-size:24px;color:blue"></i></a>
+                            <a class="twitter" href="#"><i class="fa fa-twitter" style="font-size:24px;color:darkturquoise"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="topnav">
-                                <div class="float-right">
+                    <div class="float-left">
+                        <div class="icon-bar">
+                            <a class="busqueda" href="#"><i class="fa fa-search"  style="font-size:24px;color:black" ></i></a>
 
-                                    <input type="text" placeholder="Buscar">
-                                </div>
-                            </div>
                         </div>
                     </div>
+                    
+                       
                 </div>
-                <div class="col-md-12">
-                    <div class="col-md-12">
+                
+                <div class="col-12, col-sm-12, col-md-12, col-lg-12, col-xl-12">
+                    <div class="col-12, col-sm-12, col-md-12, col-lg-12, col-xl-12">
                         <div class="vertical-menu">
                             <a [routerLink]="['/']" class="active">Home</a>
                             <a href="#">Descubre el Eje</a>
                             <a href="#">Donde Conocer</a>
                             <a href="#">Ferias y Fiestas</a>
 
+                            
+
                             <a [routerLink]="['/listar-administradores']">listar-administradores</a>
                             <a [routerLink]="['/register-admin']">REGISTRAR aDMIN</a>
                             <a [routerLink]="['/registrar-lugar']">REGISTRAR Lugar</a>
+                            <a [routerLink]="['/cuentanos-experiencia']">cuentanos tu experiencia</a>
+                            <a [routerLink]="['/contactanos']">contactanos</a>
+                            <a [routerLink]="['/preguntas-frecuentes']">preguntasFrecuentes</a>
+                            <a [routerLink]="['/login']">login</a>
+
                         </div>
                     </div>
                 </div>
@@ -61,3 +73,6 @@
         </div>
     </div>
 </div>
+
+
+

@@ -21,6 +21,7 @@ export class RegisterAdminComponent implements OnInit {
   }
   Uservice; any;
 
+
   constructor(private RegistrarUsuarioService: RegistrarUsuariosService, private Router:Router) { }
 
   ngOnInit() {
@@ -46,6 +47,7 @@ export class RegisterAdminComponent implements OnInit {
       err => {
         console.log(JSON.stringify(err));
         console.log(this.agregarUsuarioRegistro);
+        alert("Campos vacios");
       });
   }
 
@@ -59,6 +61,8 @@ export class RegisterAdminComponent implements OnInit {
         console.log(JSON.stringify(err));
       });
   }
+
+  
 
 
 

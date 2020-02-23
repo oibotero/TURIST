@@ -4,44 +4,52 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+
 <div class="col-10, col-sm-10, col-md-10, col-lg-10, col-xl-10">
     <div class="text-center">
         <div class="topnav">
             <img width="150" height="150" src="assets/img/log.jpg">
         </div>
-        <form (ngSubmit)="form-group">
+        <form  novalidate #f="ngForm" (ngSubmit)="form-group">
             <div class="form-group">
+                <label for="">Nombre Completo *</label>
                 <input placeholder="Nombre Completo" type="text"
-                    [(ngModel)]="agregarUsuarioRegistro.nombreCompleto" name="nombreCompleto" class="form-control" />
+                    [(ngModel)]="agregarUsuarioRegistro.nombreCompleto" name="nombreCompleto" class="form-control" ngModel required/>
             </div>
 
             <div class="form-group">
+                <label for="">Nombre de usuario *</label>
                 <input placeholder="Nombre Usuario" type="text"
-                    [(ngModel)]="agregarUsuarioRegistro.nombreUsuario" name="nombreUsuario" class="form-control" />
+                    [(ngModel)]="agregarUsuarioRegistro.nombreUsuario" name="nombreUsuario" class="form-control" ngModel required/>
             </div>
             <div class="form-group">
+                <label for="">tipo de documento *</label>
                 <input placeholder="Tipo documento" type="text"
-                    [(ngModel)]="agregarUsuarioRegistro.tipoDocumento" name="tipoDocumento" class="form-control" />
+                    [(ngModel)]="agregarUsuarioRegistro.tipoDocumento" name="tipoDocumento" class="form-control" ngModel required/>
             </div>
             <div class="form-group">
+                <label for="">Numero de documento *</label>
                 <input placeholder="Numero de Documento" type="number"
-                    [(ngModel)]="agregarUsuarioRegistro.numeroDocumento" name="numeroDocumento" class="form-control" />
+                    [(ngModel)]="agregarUsuarioRegistro.numeroDocumento" name="numeroDocumento" class="form-control" ngModel required/>
             </div>
             <div class="form-group">
+                <label for="">Correo electronico *</label>
                 <input placeholder="Correo Electronico" type="email"
-                    [(ngModel)]="agregarUsuarioRegistro.correoElectronico" name="correoElectronico" class="form-control" />
+                    [(ngModel)]="agregarUsuarioRegistro.correoElectronico" name="correoElectronico" class="form-control" ngModel required/>
             </div>
             <div class="form-group">
+                <label for="">Codigo de aceptacion *</label>
                 <input placeholder="Codigo de Aceptación" type="text"
-                    [(ngModel)]="agregarUsuarioRegistro.codigoAceptacion" name="codigoAceptacion" class="form-control" />
+                    [(ngModel)]="agregarUsuarioRegistro.codigoAceptacion" name="codigoAceptacion" class="form-control" ngModel required/>
             </div>
             <div class="form-group">
+                <label for="">Contraseña *</label>
                 <input placeholder="Contraseña" type="password"
-                    [(ngModel)]="agregarUsuarioRegistro.contrasena" name="contrasena" class="form-control" />
+                    [(ngModel)]="agregarUsuarioRegistro.contrasena" name="contrasena" class="form-control" ngModel required/>
             </div>
             <div>
 
-                <button (click)="agregarPersona()" type="submit" class="btn btn-primary"> agregar administrador</button>
+                <button (click)="agregarPersona()" type="submit" class="btn btn-primary" [disabled]="f.invalid"> agregar administrador</button>
 
             </div>
         </form>
