@@ -11,7 +11,7 @@
 
 <div class="col-10, col-sm-10, col-md-10, col-lg-10, col-xl-10">
     <div class="text-center">
-        <form (ngSubmit)="form-group">
+        <form novalidate #f="ngForm" (ngSubmit)="form-group">
             <div class="form-group">
                 <label for="">¿Cuál es tu nombre? *</label>
                 <input required placeholder="Ingresa tu nombre" type="text" [(ngModel)]=AgregarContacto.nombreUsuario
@@ -19,16 +19,15 @@
             </div>
             <div class="form-group">
                 <label for="">Cual es tu correo electronico *</label>
-                <input placeholder="Correo Electronico" type="email" [(ngModel)]="AgregarContacto.correoElectronico"
+                <input required placeholder="Correo Electronico" type="email" [(ngModel)]="AgregarContacto.correoElectronico"
                     name="correoElectronico" class="form-control" />
             </div>
             <div class="form-group">
                 <label for="">¿porque nos escribes? *</label>
-                <select name="pais" class="form-control" [(ngModel)]=AgregarContacto.asunto name="asunto">
-                    <option value="opcion1">opcion1</option>
-                    <option value="opcion2">opcion2</option>
-                    <option value="opcion3">opcion3</option>
-                    <option value="opcion4">opcion4</option>
+                <select required name="pais" class="form-control" [(ngModel)]=AgregarContacto.asunto name="asunto">
+                    <option value="QOR">Queja o reclamo</option>
+                    <option value="SGR">Sugerencias</option>
+                    <option value="COM">Comentarios</option>
                 </select>
             </div>
             <label for="">¿Que quieres decirnos? </label>
@@ -41,14 +40,14 @@
             <br>
             <div class="form-group">
                 <label for="">fecha del viaje </label>
-                <input type="date"
+                <input type="date" required 
                     [(ngModel)]=AgregarContacto.fecha name="fecha" class="form-control">
             </div>
              
              
 
             <div class="text-center">
-                <button (click)="agregarContactoComponent()" type="submit" class="btn btn-primary">Registrar Lugar</button>
+                <button (click)="agregarContactoComponent()" type="submit" class="btn btn-primary" [disabled]="f.invalid">Registrar Lugar</button>
             </div>
             <br>
             <br>

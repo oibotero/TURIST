@@ -11,7 +11,7 @@
 
 <div class="col-10, col-sm-10, col-md-10, col-lg-10, col-xl-10">
     <div class="text-center">
-        <form (ngSubmit)="form-group">
+        <form novalidate #f="ngForm" (ngSubmit)="form-group">
             <div class="form-group">
                 <label for="">¿Cuál es tu nombre? *</label>
                 <input required placeholder="Ingresa tu nombre" type="text"
@@ -19,7 +19,7 @@
             </div>
             <div class="form-group">
                 <label for="">¿De donde eres? *</label>
-                <select name="pais" class="form-control"  [(ngModel)]=AgregarExperiencia.lugarOrigen name="lugarOrigen" >
+                <select required name="pais" class="form-control"  [(ngModel)]=AgregarExperiencia.lugarOrigen name="lugarOrigen" >
                     <option value="AF">Afganistán</option>
                     <option value="AL">Albania</option>
                     <option value="DE">Alemania</option>
@@ -258,12 +258,12 @@
             </div>
             <div class="form-group">
                 <label for="">¿A donde fuiste? *</label>
-                <input required placeholder="Ingresa tu destino" type="text"
+                <input id="destino" required placeholder="Ingresa tu destino" type="text"
                     [(ngModel)]=AgregarExperiencia.lugarVisitado name="lugarVisitado" class="form-control">
             </div>
             <div class="form-group">
                 <label for="">Ingresa tu correo Electronico *</label>
-                <input placeholder="Correo Electronico" type="email"
+                <input placeholder="Correo Electronico" type="email" required
                     [(ngModel)]="AgregarExperiencia.correoElectronico" name="correoElectronico" class="form-control" />
             </div>
 
@@ -276,22 +276,18 @@
                     cols="60" rows="7"></textarea>
             </div>
             <br>
-            <label for="">Subir fotografias del lugar</label>
+            <label for="">Subir Url de fotografia del lugar</label>
             <br>
             <br>
             <div class="form-group">
-                <input type="url" name="imagenes" class="form-control" [(ngModel)]=AgregarExperiencia.imagenes>
-                <label for=""> Los Archivos deben ser menores a 2MB y deben estar en .png o .jpg</label>
+                <input type="url" required name="imagenes" class="form-control" [(ngModel)]=AgregarExperiencia.imagenes>
+
             </div>
-            <div class="form-group">
-                <label for="">fecha del viaje </label>
-                <input type="date"
-                    [(ngModel)]=AgregarExperiencia.fecha name="fecha" class="form-control">
-            </div>
+            
             <br>
             <br>
             <div class="text-center">
-                <button (click)="agregarExperiencia()" type="submit" class="btn btn-primary">Registrar Lugar</button>
+                <button (click)="agregarExperiencia()" type="submit" class="btn btn-primary" [disabled]="f.invalid">Registrar Lugar</button>
             </div>
             <br>
             <br>

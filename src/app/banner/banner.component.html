@@ -1,78 +1,78 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
-<div class="col-12, col-sm-12, col-md-12, col-lg-12, col-xl-12">
-    
-    <div class="row">
-        <div class="col-2, col-sm-2, col-md-2, col-lg-2, col-xl-2">
-            <div class="topnav">
-                <img width="150" height="200" src="assets/img/pc.png">
+
+
+<body>
+
+    <div class="col-md-12">
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="topnav">
+                    <img width="150" height="200" src="assets/img/pc.png">
+                </div>
             </div>
-        </div>
-        <div class="col-10, col-sm-10, col-md-10, col-lg-10, col-xl-10">
-            <div class="row">
-                <div class="col-12, col-sm-12, col-md-12, col-lg-12, col-xl-12">
-                    <div class="float-right">
-                        <select class="sel">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="float-right">
+                            <select class="sel">
                             <option value="ayuda0">¿Podemos Ayudarte?</option>
                             <option value="ayuda1">¿Podemos Ayudarte1?</option>
                             <option value="ayuda2">¿Podemos Ayudarte2?</option>
                         </select>
-                    </div>
-                    <div class="float-right">
-                        <select class="sel">
+                        </div>
+                        <div class="float-right">
+                            <select class="sel">
                             <option value="ayuda0">English</option>
                             <option value="ayuda1">Spanish</option>
                             <option value="ayuda2">Japanese</option>
                         </select>
-                    </div>
-                    <div class="float-left">
-                        <div class="icon-bar">
-                            <a class="instagram" href="#"><i class="fa fa-instagram"  style="font-size:24px;color:purple" ></i></a>
-                            <a class="youtube" href="#"><i class="fa fa-youtube" style="font-size:24px;color:RED"></i></a>
-                            <a class="facebook" href="#"><i class="fa fa-facebook" style="font-size:24px;color:blue"></i></a>
-                            <a class="twitter" href="#"><i class="fa fa-twitter" style="font-size:24px;color:darkturquoise"></i></a>
                         </div>
-                    </div>
-                    <div class="float-left">
-                        <div class="icon-bar">
-                            <a class="busqueda" href="#"><i class="fa fa-search"  style="font-size:24px;color:black" ></i></a>
-
+                        <div class="float-left">
+                            <div class="icon-bar">
+                                <a class="instagram" href="#"><i class="fa fa-instagram"  style="font-size:24px;color:purple" ></i></a>
+                                <a class="youtube" href="#"><i class="fa fa-youtube" style="font-size:24px;color:RED"></i></a>
+                                <a class="facebook" href="#"><i class="fa fa-facebook" style="font-size:24px;color:blue"></i></a>
+                                <a class="twitter" href="#"><i class="fa fa-twitter" style="font-size:24px;color:darkturquoise"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    
-                       
-                </div>
-                
-                <div class="col-12, col-sm-12, col-md-12, col-lg-12, col-xl-12">
-                    <div class="col-12, col-sm-12, col-md-12, col-lg-12, col-xl-12">
-                        <div class="vertical-menu">
-                            <a [routerLink]="['/']" class="active">Home</a>
-                            <a href="#">Descubre el Eje</a>
-                            <a href="#">Donde Conocer</a>
-                            <a href="#">Ferias y Fiestas</a>
+                        <div class="float-left">
+                            <div class="icon-bar">
+                                <a class="busqueda" href="#"><i class="fa fa-search"  style="font-size:24px;color:black" ></i></a>
 
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="col-md-12">
+                            <div class="vertical-menu">
+                                <a [routerLink]="['/']" class="active">Home</a>
+                                 <a [routerLink]="['/descubre']">Descubre el Eje</a>
+                                <a [routerLink]="['/mejores-destino']">Dónde Conocer</a>
+                                <a [routerLink]="['/registrar-ferias-fiestas']">Registrar Ferias y Fiestas</a>
+                            <a [routerLink]="['/listar-administradores']">Listar Administrador</a>
+                            <a [routerLink]="['/register-admin']">Registrar Administrador</a>
+                            <a [routerLink]="['/registrar-lugar']">Registrar Lugar</a>
+                            <a [routerLink]="['/contactanos']">Contáctanos</a>
+                            <a [routerLink]="['/cuentanos-experiencia']">Cuentanos Experiencia</a>
+                            <a [routerLink]="['/feria-fiesta-especifica']">ferias o fiestas</a>
+                            <a [routerLink]="['/preguntas-frecuentes']">Preguntas Frecuentes</a>
+                            
                             
 
-                            <a [routerLink]="['/listar-administradores']">listar-administradores</a>
-                            <a [routerLink]="['/register-admin']">REGISTRAR aDMIN</a>
-                            <a [routerLink]="['/registrar-lugar']">REGISTRAR Lugar</a>
-                            <a [routerLink]="['/cuentanos-experiencia']">cuentanos tu experiencia</a>
-                            <a [routerLink]="['/contactanos']">contactanos</a>
-                            <a [routerLink]="['/preguntas-frecuentes']">preguntasFrecuentes</a>
-                            <a [routerLink]="['/login']">login</a>
-
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
-
+</body>

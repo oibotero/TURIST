@@ -1,0 +1,32 @@
+.menu{
+    background-color: green;
+    color: white;
+     justify-content: space-between;
+}
+
+
+.social {
+    list-style: none;
+}
+
+.social a {
+    display: inline-block;
+    color:#fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+
+.social a .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+.social a .icon-twitter {background: #00abf0;}
+.social a .icon-googleplus {background: #d95232;}
+.social a .icon-pinterest {background: #ae181f;}
+.social a .icon-mail {background: #666666;}
+
+.social a:hover {
+    background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}

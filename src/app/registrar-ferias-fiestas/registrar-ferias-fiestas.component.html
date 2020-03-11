@@ -1,0 +1,129 @@
+<div class="form-group">
+    <div class="container">
+        <form novalidate #f="ngForm" (ngSubmit)="form-group">
+            <div class="row">
+                <div class="col-md-2"> </div>
+                <div class="col-md-2">
+                    <div class="form-group" (ngSubmit)="form-group">
+                        <label for="">Categoria</label>
+                        <select required class="form-control" [(ngModel)]=registrar.categoria name="categoria">
+                            <option value="feria">Feria</option>
+                            <option value="fiesta">Fiesta</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-2"> </div>
+                <div class="col-md-2">
+                    <div class="form-group" (ngSubmit)="form-group">
+                        <label for="">Lugar</label>
+                        <input ngModel required placeholder="Ingresar nombre del lugar" type="text"
+                            [(ngModel)]=registrar.lugar name="lugar" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-2"> </div>
+                <div class="col-md-6">
+                    <div class="form-group" (ngSubmit)="form-group">
+                        <label for="">¿Cual es el Nombre del evento que desea registrar?</label>
+                        <input ngModel required placeholder="Ingresar nombre del lugar" type="text"
+                            [(ngModel)]=registrar.nombreEvento name="nombreEvento" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <label for="">Danos una descripcion del evento ( Hasta 580 caracteres) * </label>
+                    <br>
+                    <div class="form-group" (ngSubmit)="form-group">
+                        <textarea required maxlength="580" placeholder="Ingresa tu experiencia"
+                            [(ngModel)]=registrar.descripcionFeriayFiesta name="descripcionFeriayFiesta"
+                            class="form-control" cols="60" rows="7"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <br>
+
+                    <div class="form-group" (ngSubmit)="form-group">
+                        <label for="">Fecha de inicio </label>
+                        <input type="date" required [(ngModel)]=registrar.fechaInicio name="fechaInicio"
+                            class="form-control">
+                    </div>
+
+
+                    <br>
+
+                    <div class="form-group" (ngSubmit)="form-group">
+                        <label for="">Fecha de Fin </label>
+                        <input type="date" required [(ngModel)]=registrar.fechaFin name="fechaFin" class="form-control">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-6">
+                    <div class="form-group" (ngSubmit)="form-group">
+                        <label for="">Subir url de fotografia del lugar</label>
+                        <input type="url" required [(ngModel)]=registrar.imagenes name="imagenes" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-md-4"></div>
+
+                <br><br><br>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-6">
+                    <div class="form-group" (ngSubmit)="form-group">
+                        <label for="">Subir url de video del lugar</label>
+                        <input type="url" required [(ngModel)]=registrar.video name="video" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-md-4"></div>
+
+                <br><br><br>
+
+
+            </div>
+            <br><br><br>
+            <div class="row">
+                <div class="col-md-6"></div>
+                <button (click)="agregarFyF()" type="submit" class="btn btn-primary" [disabled]="f.invalid">Registrar
+                    Lugar</button>
+            </div>
+        </form>
+    </div>
+
+
+    <br>
+    <br><br>
+    <div class="float-right">
+
+        <a href="#">Terminos y Condicione</a>
+        |
+        <a href="#">Mapa del sito</a>
+
+    </div>
+
+
+
+</div>
+<br>
+<br>

@@ -1,0 +1,18 @@
+
+  <div class="container, container-sm, container-md, container-lg, container-xl">
+    <div class="row">
+        <div class="col-1, col-sm-1, col-md-1, col-lg-1, col-xl-1"></div>
+        <div class="col-10, col-sm-10, col-md-10, col-lg-10, col-xl-10">
+            <table class="table table-striped">
+                <tbody>
+                    <tr *ngFor="let item of DescubreLug" (click)="fyf(item.id)">
+                        <td> <h1>{{item.nombreEvento}}</h1></td>
+                        <td><button><img src={{item.imagenes}} alt="" class="mediana"></button></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+    </div>
+</div>

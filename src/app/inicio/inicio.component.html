@@ -1,152 +1,105 @@
-<!-- Link Swiper's CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<body>
+    <div class="page-wrap">
 
-<script src="https://unpkg.com/swiper/js/swiper.js"></script>
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <!-- Main -->
+        <section id="main">
 
-<div class="row">
-    <div class="col-md-3"></div>
+            <!-- Banner -->
+            <section id="banner">
+                <div class="inner">
+                    <h1>BIENVENIDO AL EJE CAFETERO</h1>
+                    <p>Podras disfrutar de maravillosas culturas y paisajes fabulosos </p>
+                    <ul class="actions">
+                        <li><a href="#galleries" class="button alt scrolly big">Continuar</a></li>
+                    </ul>
+                </div>
 
-    <iframe width="1700" height="300" src="https://www.youtube.com/embed/duOjHF85Abw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<br />
+            </section>
 
 
-<div class="content-all">
-    <div class="content-carrousel">
-        <figure><img src="./assets/img/FONDOS/1.jpg"></figure>
-        <figure><img src="./assets/img/FONDOS/2.jpg"></figure>
-        <figure><img src="./assets/img/FONDOS/3.jpg"></figure>
-        <figure><img src="./assets/img/FONDOS/4.jpg"></figure>
-        <figure><img src="./assets/img/FONDOS/5.jpg"></figure>
-        <figure><img src="./assets/img/FONDOS/6.jpg"></figure>
-        <figure><img src="./assets/img/FONDOS/7.jpg"></figure>
-        <figure><img src="./assets/img/FONDOS/8.jpg"></figure>
-        <figure><img src="./assets/img/FONDOS/9.jpg"></figure>
-        <figure><img src="./assets/img/FONDOS/1.jpg"></figure>
+
+            <!-- Gallery -->
+            <section id="galleries">
+                <div class="row">
+                    <div class="col-md-3"></div>
+
+                    <iframe width="1700" height="300" src="https://www.youtube.com/embed/duOjHF85Abw" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <!-- Photo Galleries -->
+                <div class="gallery">
+                    <div class="content">
+                        <div class="media">
+                            <button (click)="Nevado()" type="submit" class="btn btn-primary">
+                                <img src="../../assets/img/FONDOS/1.jpg" alt="" class="img-fluid">
+                            </button>
+                        </div>
+                        <div class="media">
+                            <button (click)="Termal()" type="submit" class="btn btn-primary">
+                                <img src="../../assets/img/FONDOS/2.jpg" alt="" class="img-fluid">
+                            </button>
+                        </div>
+                        <div class="media">
+
+                            <button (click)="Rio()" type="submit" class="btn btn-primary">
+                                <img src="./../assets/img/FONDOS/3.jpg" alt="" t class="img-fluid">
+                            </button>
+                        </div>
+                        <div class="media">
+                            <button (click)="Paraiso()" type="submit" class="btn btn-primary">
+                                <img src="./../assets/img/FONDOS/4.jpg" alt="" class="img-fluid">
+                            </button>
+                        </div>
+                        <div class="media">
+                            <button (click)="Balsaje()" type="submit" class="btn btn-primary">
+                                <img src="./../assets/img/FONDOS/5.jpg" alt="" class="img-fluid">
+                            </button>
+                        </div>
+                        <div class="media">
+                            <button (click)="Ecoparque()" type="submit" class="btn btn-primary">
+                                <img src="./../assets/img/FONDOS/6.jpg" alt="" class="img-fluid">
+                            </button>
+                        </div>
+                        <div class="media">
+                            <button (click)="Cocora()" type="submit" class="btn btn-primary">
+                                <img src="./../assets/img/FONDOS/7.jpg" alt="" class="img-fluid">
+                            </button>
+                        </div>
+                        <div class="media">
+                            <button (click)="Chipre()" type="submit" class="btn btn-primary">
+                                <img src="./../assets/img/FONDOS/8.jpg" alt="" class="img-fluid">
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="content-all">
+                        <div class="content-carrousel">
+                            <figure><img src="./assets/img/FONDOS/1.jpg"></figure>
+                            <figure><img src="./assets/img/FONDOS/2.jpg"></figure>
+                            <figure><img src="./assets/img/FONDOS/3.jpg"></figure>
+                            <figure><img src="./assets/img/FONDOS/4.jpg"></figure>
+                            <figure><img src="./assets/img/FONDOS/5.jpg"></figure>
+                            <figure><img src="./assets/img/FONDOS/6.jpg"></figure>
+                            <figure><img src="./assets/img/FONDOS/7.jpg"></figure>
+                            <figure><img src="./assets/img/FONDOS/8.jpg"></figure>
+                            <figure><img src="./assets/img/FONDOS/9.jpg"></figure>
+                            <figure><img src="./assets/img/FONDOS/1.jpg"></figure>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+
+            </section>
+        </section>
     </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<div class="responsive">
-    <div class="gallery">
-        <a target="_blank" href="./assets/img/FONDOS/1.jpg">
-            <img src="./assets/img/FONDOS/1.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
-</div>
-
-
-<div class="responsive">
-    <div class="gallery">
-        <a target="_blank" href="./assets/img/FONDOS/2.jpg">
-            <img src="./assets/img/FONDOS/2.jpg" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
-</div>
-
-<div class="responsive">
-    <div class="gallery">
-        <a target="_blank" href="./assets/img/FONDOS/3.jpg">
-            <img src="./assets/img/FONDOS/3.jpg" alt="Northern Lights" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
-</div>
-
-<div class="responsive">
-    <div class="gallery">
-        <a target="_blank" href="./assets/img/FONDOS/4.jpg">
-            <img src="./assets/img/FONDOS/4.jpg" alt="Mountains" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
-</div>
-
-<div class="clearfix"></div>
-
-<div style="padding:6px;">
-    <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller
-        than 500px, the images will stack vertically (100%).</p>
-    <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
-<header><i>Magtimus</i></header>
-<!-- Swiper -->
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./assets/img/FONDOS/4.jpg)"></div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-</div>
-
-<!-- Swiper JS -->
-
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    });
-</script>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<div class="float-right">
-
-    <a href="#">Terminos y Condicione</a> |
-    <a href="#">Mapa del sito</a>
-
-</div>
-
-<br>
-<br>
+</body>

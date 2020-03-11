@@ -1,6 +1,6 @@
-function hello() {
-    alert('Hello!!!');
-}
+(function hello() {
+    
+})()
 
 
 

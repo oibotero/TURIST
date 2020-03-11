@@ -1,97 +1,87 @@
-.vertical-menu {
-  background-color: #eee;
-}  
-.vertical-menu a {
-  
-  color: black;
-  display: inline-block;
-  padding: 12px;
-  text-decoration: none;
-}
-.vertical-menu a:hover {
-  background-color: #ccc;
-}
-.vertical-menu a.active {
-  background-color: rgb(37, 186, 0);
-  color: white;
-}
-.button-Registar{ 
-  background-color:rgb(37, 186, 0);
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-}
-.topnav {
-  overflow: hidden;
-}
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-}
-.Rinput[type="number"] {
-  width:500px;
-}
-.otherinput{
-width:500px;
+body {
+    background-image: url("../../assets/img/fondo.jpg");
+    background-attachment: fixed;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.sel{    
-  overflow: hidden;  
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
+.vertical-menu {
+    background-color: #eee;
 }
+
+.vertical-menu a {
+    color: black;
+    display: inline-block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: rgb(37, 186, 0);
+    color: white;
+}
+
+.button-Registar {
+    background-color: rgb(37, 186, 0);
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.Rinput[type="number"] {
+    width: 500px;
+}
+
+.otherinput {
+    width: 500px;
+}
+
+.sel {
+    overflow: hidden;
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
 .icon-bar {
-  margin-top: 8px;
-  width: 100px;
-  background-color: white;
-  overflow: auto;
+    margin-top: 8px;
+    width: 100px;
+    overflow: auto;
 }
 
 .icon-bar a {
-  float: left;
-  text-align: center;
-  width: 25%;
-  padding: 4px 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 4px 0;
+    transition: all 0.3s ease;
+    font-size: 20px;
 }
 
-.icon-bar a:hover {
-  background-color: white;
+.categoriasel {
+    overflow: hidden;
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 15px;
 }
-
-.active {
-  background-color: white;
-}
-.youtube{
-    background-color:white;
-}
-.instagram{
-  background-color: white;
-}
-.twitter{
-  background-color: white;
-}
-.facebook{
-    background-color:white;
-}
-.categoriasel{    
-  overflow: hidden;  
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 15px;
-}
-
-
-
-
-

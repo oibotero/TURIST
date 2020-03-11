@@ -1,0 +1,200 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" href="./app.component.scss">-->
+
+<div class="col-sm-12">
+<div class="row">
+    <div class="col-2">
+            <div class="topnav">
+                    <img
+                        width="250"
+                        height="200"
+                        src="assets/img/travel.png">
+            </div>
+    </div>
+    <br>
+    <div class="col-10" >  
+            <br>
+    <br>
+            <div class="row">
+        <div class="col-12" >
+            <div class="float-right">
+            <select class="sel">
+                    <option value="ayuda0">¿Podemos Ayudarte?</option>
+                    <option value="ayuda1">¿Podemos Ayudarte1?</option>
+                    <option value="ayuda2">¿Podemos Ayudarte2?</option>
+                </select> 
+                </div>
+                <div class="float-right">
+                <div class="icon-bar">
+                        <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+                        <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
+                        <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                        <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                      </div>
+                      </div>
+        <br>
+        <br>
+        </div>
+            <div class="col-12">
+                    <div class="row">
+                            <div class="col-12" >
+                            <div class="topnav"><div class="float-right">
+                            
+                    <input type="text" placeholder="Buscar">
+                </div>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-10">
+                <mat-toolbar class="menu" >
+                    <div class="col-10" >
+                    <div>
+                        <span >Inicio</span>    
+                        <span >Descubre el Eje</span>
+                        <span >Donde Conocer</span>
+                        <span >Ferias y Fiestas</span>          
+                    </div>
+            </div>
+                </mat-toolbar>  
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-md-3" ></div>
+    <div class="col-md-6" >
+        <mat-toolbar class="submenu" >
+        
+            <div>
+                <span >Acerca del eje cafetero</span>    
+                <span >Clima</span>
+                <span >Salud</span>
+                <span >Convertidor de moneda</span>          
+            </div>
+        
+        </mat-toolbar>  
+   </div>  
+    <div class="col-md-3" ></div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="col-md-12">
+        <div class="text-center">
+            <h1>Información Util Eje Cafetero </h1>
+        </div>
+    
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <section id="galeria">
+                <article>
+                    <a href="../informacion-util/AcercadelEjeCafetero.html" target="_blank">
+                    <figure>
+                        <figcaption>Acerca del Eje Cafetero </figcaption>
+                        <img src="assets/img/manizales-colombia.jpg" height="300" width="400"/> 
+                    </figure>
+                    </a>
+                </article>
+                <article>
+                    <a href="../informacion-util/Salud.html" target="_blank">
+                    <figure>
+                        <figcaption>Tips de salud</figcaption>
+                        <img src="assets/img/cafe.jpg" height="300" width="400"/>
+                    </figure>
+                    </a>
+                </article>
+                
+                </section>
+        </div>
+        <div class="col-md-4">
+            <section id="galeria">
+                <article>
+                    <a href="../informacion-util/ClimaEje.html" target="_blank">
+                    <figure>
+                        <figcaption>Clima Eje Cafetero</figcaption>
+                        <img src="assets/img/cascadas.jpg" height="300" width="300"/> 
+                    </figure>
+                    </a>
+                </article>
+                <article>
+                    <a href="../currency-converter/currency-converter.component.html" target="_blank">
+                    <figure>
+                        <figcaption>Convertidor de moneda</figcaption>
+                        <img src="assets/img/zona-cafetera.jpg" height="300" width="300"/>
+                    </figure>
+                    </a>
+                </article>
+            </section>
+        </div>
+        <div class="col-md-2">
+        </div>
+        <!---inicio otra -->
+        <div class="col-md-2"></div>
+        <br>
+        <div class="col-md-8">
+            <angular-image-slider
+            [autoRotate]="true"
+            [autoRotateAfter]="5000"
+            [autoRotateRight]="true"
+            [images]="imagesAcercaUrl"
+            @carouselAnimation
+          ></angular-image-slider>
+        </div>
+        <div class="col-md-2">
+                
+        </div>
+
+        <br>
+        <br>
+    
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-6"></div>
+
+        <div class="col-md-2"></div>
+        <br>
+        <div class="col-md-4">    
+        </div>
+        <div class="col-md-6">
+        </div>    
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+    <br>
+    
+    
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            
+        </div>
+        <div class="col-md-6">  
+        </div>
+    </div>
+    <br>
+    <br>
+    
+    <div class="float-right">
+    
+        <a href="#">Terminos y Condicione</a>
+        |
+        <a href="#">Mapa del sito</a>
+    
+    </div>
+    
+    <br>
+    <br>    
